@@ -14,8 +14,10 @@
                 <div>
                     <h4 class="title"><a href="#" class="stretched-link">Representing Clients on Tax Audits and
                             Tax examinations</a></h4>
-                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-                        sint occaecati cupiditate non provident</p>
+                    <p class="description">As part of our service, we attend on behalf of our clients to tax audits and
+                        examinations carried by the Tanzania Revenue Authority and to assist in preparation of tax audit
+                        and examination responses and answering to tax audit and examination queries raised by the Tax
+                        Authority.</p>
                 </div>
             </div>
             <!-- End Service Item -->
@@ -24,8 +26,11 @@
                 <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
                 <div>
                     <h4 class="title"><a href="#" class="stretched-link">Tax Advisory</a></h4>
-                    <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat tarad limino ata</p>
+                    <p class="description">We provide advice on corporate tax, withholding taxes, VAT, double taxation
+                        status, charitable tax status, updates of changes in the tax laws and regulations, customs and
+                        excise duties, stamp duties, payroll taxes, preparation of transfer pricing policy and the tax
+                        implications of any other matters which may be referred to us. The scope of the advisory
+                        services shall be discussed between our firm and the client.</p>
                 </div>
             </div><!-- End Service Item -->
 
