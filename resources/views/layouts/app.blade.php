@@ -14,6 +14,11 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+
+
+    <link rel="stylesheet" href="{{ secure_asset('resouces/css/app.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('resouces/css/app.js') }}">
 </head>
 
 <body class="font-sans antialiased">
