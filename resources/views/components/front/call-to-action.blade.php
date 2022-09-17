@@ -3,10 +3,10 @@
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <h3>Ut fugiat aliquam aut non</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    <a class="cta-btn" href="#">Call To Action</a>
+                    <h3>SOSY TAX & FINANCIAL SERVICES.</h3>
+                    <p>We are assisting many of our clients in solving their specific financial and related problems on
+                        tax issues..</p>
+                    <a class="cta-btn" href="tel:+255 765 919 248">Call us Today</a>
                 </div>
             </div>
 

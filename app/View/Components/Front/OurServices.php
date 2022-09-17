@@ -2,6 +2,7 @@
 
 namespace App\View\Components\Front;
 
+use App\Models\Service;
 use Illuminate\View\Component;
 
 class OurServices extends Component
@@ -23,6 +24,8 @@ class OurServices extends Component
      */
     public function render()
     {
-        return view('components.front.our-services');
+        $services = Service::paginate(3);
+
+        return view('components.front.our-services', compact('services'));
     }
 }

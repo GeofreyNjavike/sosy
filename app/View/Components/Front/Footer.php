@@ -2,6 +2,7 @@
 
 namespace App\View\Components\Front;
 
+use App\Models\Service;
 use Illuminate\View\Component;
 
 class Footer extends Component
@@ -23,6 +24,7 @@ class Footer extends Component
      */
     public function render()
     {
-        return view('components.front.footer');
+        $services = Service::paginate(5);
+        return view('components.front.footer', compact('services'));
     }
 }

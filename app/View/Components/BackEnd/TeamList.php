@@ -2,10 +2,10 @@
 
 namespace App\View\Components\BackEnd;
 
-use App\Models\Service;
+use App\Models\Team;
 use Illuminate\View\Component;
 
-class serviceList extends Component
+class TeamList extends Component
 {
     /**
      * Create a new component instance.
@@ -24,7 +24,7 @@ class serviceList extends Component
      */
     public function render()
     {
-        $services =  Service::paginate(3);
-        return view('components.back-end.service-list', compact('services'));
+        $teams = Team::all();
+        return view('components.back-end.team-list', compact('teams'));
     }
 }

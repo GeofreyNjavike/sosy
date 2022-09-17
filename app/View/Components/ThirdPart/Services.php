@@ -1,11 +1,11 @@
 <?php
 
-namespace App\View\Components\BackEnd;
+namespace App\View\Components\ThirdPart;
 
-use App\Models\Service;
 use Illuminate\View\Component;
+use App\Models\Service;
 
-class serviceList extends Component
+class Services extends Component
 {
     /**
      * Create a new component instance.
@@ -24,7 +24,8 @@ class serviceList extends Component
      */
     public function render()
     {
-        $services =  Service::paginate(3);
-        return view('components.back-end.service-list', compact('services'));
+        $services = Service::first()->get();
+
+        return view('components.third-part.services', compact('services'));
     }
 }

@@ -18,7 +18,13 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('services')" :active="request()->routeIs('services')">
-                        {{ __('Servicess') }}
+                        {{ __('Services') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('teams')" :active="request()->routeIs('teams')">
+                        {{ __('Teams') }}
                     </x-nav-link>
                 </div>
 
@@ -85,6 +91,12 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('services')" :active="request()->routeIs('services')">
                 {{ __('Services') }}
+            </x-responsive-nav-link>
+        </div>
+
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('teams')" :active="request()->routeIs('teams')">
+                {{ __('Teams') }}
             </x-responsive-nav-link>
         </div>
         <!-- Responsive Settings Options -->
