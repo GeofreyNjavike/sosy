@@ -11,10 +11,10 @@
                       <p>is a progressive Tax consulting firm providing comprehensive set of cost effective solutions to
                           organization. </p>
                       <div class="social-links d-flex  mt-3">
-                          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                          <a href="{{url('https://twitter.com/TaxSosy?t=E2Z7GsMC4yFhpXSYv2y0ig&s=09')}}}" class="twitter"><i class="bi bi-twitter"></i></a>
+                          <a href="{{url('https://www.instagram.com/invites/contact/?i=zslixk6n2eyh&utm_content=peo3h91')}}" class="facebook"><i class="bi bi-facebook"></i></a>
+                          <a href="{{url('https://www.instagram.com/invites/contact/?i=zslixk6n2eyh&utm_content=peo3h91')}}" class="instagram"><i class="bi bi-instagram"></i></a>
+                          <a href="{{url('https://www.linkedin.com/in/sosy-tax-and-financial-services-745767250')}}" class="linkedin"><i class="bi bi-linkedin"></i></a>
                       </div>
                   </div>
 
