@@ -15,7 +15,7 @@
                     </tr>
                 </thead>
                 <tbody class="bg-white">
-                    @forelse ($listService as $service)
+                    @forelse ($list as $service)
                         <tr class="text-gray-700">
                             <td class="px-4 py-3 border">
                                 <div class="flex items-center text-sm">
@@ -41,7 +41,7 @@
                                         class="fa fa-pencil text-green-500"></i></a>
                             </td>
                         </tr>
-                      
+
                     @empty
                         <tr class="text-gray-700">
                             <td class="px-4 py-3 border">

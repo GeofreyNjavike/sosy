@@ -24,7 +24,7 @@ class serviceList extends Component
      */
     public function render()
     {
-        $listService =  Service::all();
-        return view('components.back-end.service-list', compact('listService'));
+        $list =  Service::all();
+        return view('components.back-end.service-list', compact('list'));
     }
 }
