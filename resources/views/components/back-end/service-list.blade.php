@@ -41,7 +41,7 @@
                                         class="fa fa-pencil text-green-500"></i></a>
                             </td>
                         </tr>
-
+                        {{ $services->links() }}
                     @empty
                         <tr class="text-gray-700">
                             <td class="px-4 py-3 border">
@@ -72,5 +72,5 @@
         </div>
     </div>
 
-    {{ $services->links() }}
+
 </section>
