@@ -11,7 +11,7 @@
                 <div class="p-6 bg-white border-b border-gray-200 text-center">
                     List of Available Posts
                 </div>
-                {{-- <x-back-end.service-list /> --}}
+                <x-back-end.service-list />
 
                 <x-back-end.team-list />
             </div>

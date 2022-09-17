@@ -24,7 +24,7 @@ class serviceList extends Component
      */
     public function render()
     {
-        $services =  Service::paginate(3);
-        return view('components.back-end.service-list', compact('services'));
+        $listService =  Service::all();
+        return view('components.back-end.service-list', compact('listService'));
     }
 }
