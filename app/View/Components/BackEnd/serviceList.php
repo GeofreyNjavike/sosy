@@ -1,10 +1,8 @@
 <?php
 
 namespace App\View\Components\BackEnd;
-
 use App\Models\Service;
 use Illuminate\View\Component;
-
 class serviceList extends Component
 {
     /**
