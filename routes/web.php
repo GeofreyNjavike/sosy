@@ -4,7 +4,7 @@ use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Service;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,7 +25,8 @@ Route::get('/team', [WelcomeController::class, 'team'])->name('team');
 Route::get('/contact-us', [WelcomeController::class, 'contact'])->name('contact-us');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $list =  Service::all();
+    return view('dashboard', compact('list'));
 })->middleware(['auth'])->name('dashboard');
 
 
