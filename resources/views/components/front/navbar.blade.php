@@ -5,7 +5,7 @@
 
           <a href="index.html" class="logo d-flex align-items-center">
 
-              <img class=" w-circle" src='{{ asset('assets/img/logo.png') }}'>
+              <img class=" w-circle bg-amber-50" src='{{ asset('assets/img/logo.png') }}'>
 
           </a>
 
