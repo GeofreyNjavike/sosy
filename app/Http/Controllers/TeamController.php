@@ -58,7 +58,10 @@ class TeamController extends Controller
      */
     public function edit($id)
     {
-        //
+        $team = Team::findOrFail($id);
+
+        return view('editTeam', compact('team'));
+
     }
 
     /**
@@ -70,7 +73,8 @@ class TeamController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Team::find($id)->update($request->all());
+        return redirect()->route('dashboard');
     }
 
     /**
@@ -81,6 +85,7 @@ class TeamController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Team::where('id', $id)->delete();
+        return redirect()->route('dashboard');
     }
 }

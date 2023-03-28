@@ -29,14 +29,22 @@ Route::get('/dashboard', function () {
     return view('dashboard', compact('list'));
 })->middleware(['auth'])->name('dashboard');
 
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/services', [ServicesController::class, 'index'])->name('services');
+    Route::post('services/create', [ServicesController::class, 'create'])->name('services/create');
+    Route::GET('deleteService/{id}', [ServicesController::class, 'delete'])->name('delete');
+    Route::GET('editService/{id}', [ServicesController::class, 'edit'])->name('edit');
+    Route::post('services/update/{id}', [ServicesController::class, 'update'])->name('update');
+
+    Route::get('teams', [TeamController::class, 'index'])->name('teams');
+    Route::post('teams/update/{id}', [TeamController::class, 'update'])->name('update');
+    Route::get('/editTeam/{id}', [TeamController::class, 'edit'])->name('teams/edit');
+    Route::get('/deleteTeam/{id}', [TeamController::class, 'destroy'])->name('teams/delete');
+    Route::post('teams/create', [TeamController::class, 'store'])->name('teams/create');
+});
 
 
-Route::get('/services', [ServicesController::class, 'index'])->name('services');
-Route::post('services/create', [ServicesController::class, 'create'])->name('services/create');
-Route::GET('editService/{id}', [ServicesController::class, 'edit'])->name('edit');
-Route::post('services/update/{id}', [ServicesController::class, 'update'])->name('update');
 
-Route::get('teams', [TeamController::class, 'index'])->name('teams');
-Route::post('teams/create', [TeamController::class, 'store'])->name('teams/create');
+
 
 require __DIR__ . '/auth.php';

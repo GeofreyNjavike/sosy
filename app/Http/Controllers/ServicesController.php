@@ -26,7 +26,7 @@ class ServicesController extends Controller
 
         $data = $request->all();
         Service::create($data);
-        return back();
+        return redirect()->route('dashboard');
     }
 
     public function edit(Request $request, $id)
@@ -36,6 +36,12 @@ class ServicesController extends Controller
         return view('editServices', compact('service'));
     }
 
+    public function delete(Request $request, $id)
+    {
+        $service =  Service::where('id', $id)->delete();
+
+        return redirect()->route('dashboard');
+    }
 
     public function update(Request $request, $id)
     {

@@ -52,7 +52,9 @@
                                             </td>
 
                                             <td class="px-4 py-3 text-ms font-semibold border">
-                                                <a href="#"><i class="fa fa-trash text-red-500"></i></a>
+                                                <a href="{{ URL::to('deleteService', $service->id) }}"
+                                                    onclick="return confirm_delete()"><i
+                                                        class="fa fa-trash text-red-500"></i></a>
                                                 <a href="{{ URL::to('editService', $service->id) }}"><i
                                                         class="fa fa-pencil text-green-500"></i></a>
                                             </td>
@@ -90,10 +92,17 @@
                     </div>
 
 
+
                 </section>
 
 
                 <x-back-end.team-list />
+
+                <script type="text/javascript">
+                    function confirm_delete() {
+                      return confirm('are you sure?');
+                    }
+                    </script>
             </div>
         </div>
     </div>
