@@ -1,12 +1,8 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-
-          <a href="index.html" class="logo d-flex align-items-center">
-
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+          <a href="{{ url('/') }}" class="logo d-flex align-items-center">
               <img class=" w-circle bg-amber-50" src='{{ asset('assets/img/logo.png') }}'>
-
           </a>
 
           <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>

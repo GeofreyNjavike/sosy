@@ -23,7 +23,7 @@
                       <ul>
                           <li><i class="bi bi-dash"></i> <a href="{{ url('/') }}">Home</a></li>
                           <li><i class="bi bi-dash"></i> <a href="{{ url('/') }}#why-us">About us</a></li>
-                          <li><i class="bi bi-dash"></i> <a href="{{ url('/') }}#services">Services</a></li>
+                          <li><i class="bi bi-dash"></i> <a href="{{ url('service') }}">Services</a></li>
                           <li><i class="bi bi-dash"></i> <a href="{{ url('/team') }}">Team</a></li>
                       </ul>
                   </div>

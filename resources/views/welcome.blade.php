@@ -3,7 +3,7 @@
     <x-front.navbar />
     <x-front.header />
 
-    <main id="main">
+<main id="main">
 
         <x-front.why-choose-us />
         <x-front.our-services />

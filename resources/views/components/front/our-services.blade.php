@@ -17,6 +17,7 @@
                                 class="stretched-link">{{ $service->serviceName }}</a></h4>
                         <p class="description">
                             {{ \Illuminate\Support\Str::limit($service->serviceDescriptions, 100, $end = '...') }}</p>
+                            <span style="color: #f57813">Read more...</span>
                     </div>
                 </div>
                 <!-- End Service Item -->
